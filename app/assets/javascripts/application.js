@@ -1,9 +1,9 @@
 //= require jquery.min
-//= require contacts
 //= require purecounter/purecounter_vanilla
 //= require aos/aos
 //= require bootstrap/js/bootstrap.bundle.min
 //= require swiper/swiper-bundle.min
+//= require contacts
 
 document.addEventListener('DOMContentLoaded', function() {
 	(function() {

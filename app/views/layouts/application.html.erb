@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <link rel="icon" href="<%= image_url('favicon.png') %>">
+    <link rel="icon" href="<%= image_url('icon.png') %>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="Farhan Iqbal Academy, Experienced Teachers, Home Tution, Well Reputed, Studying for matric and fs">
@@ -40,14 +40,11 @@
           <li><%= link_to 'About us', abouts_path, class: "#{active?('abouts')}"  %></li>
           <li><%= link_to 'Classes', classes_path, class: "#{active?('classes')}"  %></li>
           <li><%= link_to 'Events', events_path, class: "#{active?('events')}"  %></li>
-          <li><%= link_to 'Galary', gallaries_path, class: "#{active?('gallaries') }"  %></li>
+          <li><%= link_to 'Gallary', gallaries_path, class: "#{active?('gallaries') }"  %></li>
           <li><%= link_to 'Contact', contacts_path, class: "#{active?('contacts')}"  %></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
-      <a href="#" class="get-started-btn">Get Started</a>
-
     </div>
   </header><!-- End Header -->
 
