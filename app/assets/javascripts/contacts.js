@@ -101,6 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
               'college.jpeg',
               'Middle.jpeg',
               'result.jpeg',
+              'group-photo.jpeg',
               'farhan-iqbal.jpeg'
               ];
           
