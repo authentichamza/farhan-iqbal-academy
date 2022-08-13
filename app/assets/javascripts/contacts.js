@@ -95,14 +95,14 @@ document.addEventListener('DOMContentLoaded', function() {
       //Start this baby up
       (function init() {
           var images = [
-              'class.jpeg',
-              'classroom_female.jpeg',
-              'experiment.jpeg',
-              'college.jpeg',
-              'Middle.jpeg',
-              'result.jpeg',
-              'group-photo.jpeg',
-              'farhan-iqbal.jpeg'
+              'class.jpg',
+              'classroom_female.jpg',
+              'experiment.jpg',
+              'college.jpg',
+              'Middle.jpg',
+              'result.jpg',
+              'group-photo.jpg',
+              'farhan-iqbal.jpg'
               ];
           
           //Set Initial Featured Image
