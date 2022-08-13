@@ -45,14 +45,14 @@
           <div class="col-lg-8 mt-5 mt-lg-0">
             <%= form_for :contact, url: '/contacts', html: { class: "php-email-form" } do |f|%>
                 <% flash.each do |type, msg| %>
-                  <div class="alert alert-primary d-flex align-items-center" role="alert">
-                    <div>
-                      <%= msg %>
-                    </div>
+                   <div class="p-4 alert alert-success" role="alert">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <%= msg %>
                   </div>
                 <% end %>
                 <% if @contact.errors.any? %>
-                <div class="p-4 alert-danger" role="alert">
+                <div class="p-4 alert alert-danger" role="alert">
+                  <i class="bi bi-exclamation-triangle-fill"></i>
                   <%= @contact.errors.full_messages.first  %>
                 </div>
                 <% end %>
