@@ -1,10 +1,10 @@
 <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs" data-aos="fade-in">
+    <div class="breadcrumbs mt-8" data-aos="fade-in">
       <div class="container">
         <h2>Contact Us</h2>
-        <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
+        <p>You're not going to hit a ridiculously long phone menu when you call us. Your email isn't going to the inbox abyss, never to be seen or heard from again. Fill Out the below form for any queries related to our services</p>
       </div>
     </div><!-- End Breadcrumbs -->
 
@@ -35,7 +35,7 @@
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>+92 300 9499664</p>
               </div>
 
             </div>
@@ -45,9 +45,11 @@
           <div class="col-lg-8 mt-5 mt-lg-0">
             <%= form_for :contact, url: '/contacts', html: { class: "php-email-form" } do |f|%>
                 <% flash.each do |type, msg| %>
-                <div class="p-4 alert-success" role="alert">
-                  <%= msg %>
-                </div>
+                  <div class="alert alert-primary d-flex align-items-center" role="alert">
+                    <div>
+                      <%= msg %>
+                    </div>
+                  </div>
                 <% end %>
                 <% if @contact.errors.any? %>
                 <div class="p-4 alert-danger" role="alert">
@@ -75,3 +77,8 @@
     </section><!-- End Contact Section -->
 
   </main>
+   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="info-fill" viewBox="0 0 16 16">
+        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
+      </symbol>
+    </svg>

@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :homes, only: :index
   resources :abouts, only: :index
   resources :classes, only: :index
+  resources :events, only: :index
+  resources :gallaries, only: :index
   resources :contacts, only: %i[index create]
 
   root to: 'homes#index'
