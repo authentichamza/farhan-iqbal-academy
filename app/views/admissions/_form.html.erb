@@ -30,7 +30,7 @@
     </div>
     <div class="mb-3">
       <label for="admission_grade" class="form-label">Class</label>
-      <%= f.select :grade, options_for_select(["Class 6th", "Class 7th", "Class 8th", 'Class 9th', 'Class 10th', 'Class 11th', 'Class 12th', 'O-level', 'A-level'], 'Class 6th'), { class: "form-select admission_select" } %>
+      <%= f.select :grade, options_for_select(["Class 6th", "Class 7th", "Class 8th", 'Class 9th', 'Class 10th', 'Class 11th', 'Class 12th', 'O-level', 'A-level'], 'Class 6th'), {} ,{ class: "form-select admission_select" } %>
       <div id="emailHelp" class="form-text">Your year of study</div>
     </div>
     <div id='subject_choice' class="mb-3 d-none">
@@ -40,7 +40,7 @@
     </div>
     <div class="mb-3">
       <label for="admission_medium" class="form-label">Medium of study</label>
-      <%= f.select :medium, Admission.media.keys.map { |w| [w.humanize.titleize, w] }, { class: "form-select" } %>
+      <%= f.select :medium, Admission.media.keys.map { |w| [w.humanize.titleize, w] }, {}, { class: "form-select" } %>
 
       <div id="emailHelp" class="form-text">Medium of study which you will be comfortable with</div>
     </div>
