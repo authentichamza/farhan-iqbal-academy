@@ -4,7 +4,7 @@
 //= require bootstrap/js/bootstrap.bundle.min
 //= require swiper/swiper-bundle.min
 //= require contacts
-
+//= require admission_select
 document.addEventListener('DOMContentLoaded', function() {
 	(function() {
 	  "use strict";

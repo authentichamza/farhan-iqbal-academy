@@ -1,0 +1,50 @@
+<%= form_for :admission, url: '/admissions' do |f|%>
+<div class="row align-items-center justify-content-center">
+  <div class="col-md-6">
+    <% flash.each do |type, msg| %>
+     <div class="p-4 alert alert-success" role="alert">
+        <i class="bi bi-check-circle-fill"></i>
+        <%= msg %>
+      </div>
+    <% end %>
+    <% if @admission.errors.any? %>
+      <div class="p-4 alert alert-danger" role="alert">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+        <%= @admission.errors.full_messages.first  %>
+      </div>
+    <% end %>
+   <div class="mb-3">
+      <label for="admission_name" class="form-label">Name</label>
+      <%= f.text_field :name, class: 'form-control' %>
+      <div id="emailHelp" class="form-text">We'll never share your name with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="admission_email" class="form-label">Email address</label>
+      <%= f.text_field :email, class: 'form-control' %>
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="admission_phone_number" class="form-label">Phone Number</label>
+      <%= f.text_field :phone_number, class: 'form-control' %>
+      <div id="emailHelp" class="form-text">We'll never share your phone with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="admission_grade" class="form-label">Class</label>
+      <%= f.select :grade, options_for_select(["Class 6th", "Class 7th", "Class 8th", 'Class 9th', 'Class 10th', 'Class 11th', 'Class 12th', 'O-level', 'A-level'], 'Class 6th'), { class: "form-select admission_select" } %>
+      <div id="emailHelp" class="form-text">Your year of study</div>
+    </div>
+    <div id='subject_choice' class="mb-3 d-none">
+      <label for="admission_subject_choice" class="form-label">Subject Choice</label>
+      <%= f.select :subject_choice, [], { class: "form-select" } %>
+      <div id="emailHelp" class="form-text">Subject Choice you are opting for</div>
+    </div>
+    <div class="mb-3">
+      <label for="admission_medium" class="form-label">Medium of study</label>
+      <%= f.select :medium, Admission.media.keys.map { |w| [w.humanize.titleize, w] }, { class: "form-select" } %>
+
+      <div id="emailHelp" class="form-text">Medium of study which you will be comfortable with</div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div> 
+</div>
+<% end %>

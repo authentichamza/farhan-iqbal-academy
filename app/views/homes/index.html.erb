@@ -19,20 +19,10 @@
             <%= image_tag "group-photo.jpg", class: "img-fluid" %>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+            <h3><b>Welcome To Farhan Iqbal Academy</b></h3>
+            <p class="fst-italic fs-5">
+              About FIA Our Aspirations for excellence met many adversaries on its way. The journey we have started in 1992 with a single step has covered a long distance in short interval of time. We have speeded our way of impulse without any compromise on the quality elevation We have shown outstanding results in recent years making a brilliant history.
             </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-            </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            </p>
-
           </div>
         </div>
 
@@ -93,21 +83,21 @@
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-receipt"></i>
                     <h4>Educated high scoring students</h4>
-                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                    <p>Academy produced numerous gems</p>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-cube-alt"></i>
                     <h4>Foundation Establishment</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <p>Conceptual teaching which can help students in the later stages of their life</p>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-images"></i>
                     <h4>Communication Skills</h4>
-                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                    <p>Teaching communication skills and body language for public speeches, debate and interviews</p>
                   </div>
                 </div>
               </div>
@@ -177,83 +167,7 @@
     </section><!-- End Features Section -->
 
     <!-- ======= Popular Courses Section ======= -->
-    <section id="courses" class="courses">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row" data-aos="zoom-in" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="course-item">
-              <%= image_tag 'middle.jpg', size:'440x275' %>
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h3>Middle</h3>
-                </div>
-
-                <ul class="list-group">
-                  <li class="list-group-item">Class 6th</li>
-                  <li class="list-group-item">Class 7th</li>
-                  <li class="list-group-item">Class 8th</li>
-                </ul>
-              </div>
-            </div>
-          </div> <!-- End Course Item-->
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="course-item">
-              <%= image_tag 'matric.jpg', size:'440x275' %>
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h3>Matriculation</h3>
-                </div>
-                <ul class="list-group">
-                  <li class="list-group-item">Class 9th
-                      <ul class="list-group">
-                          <li class="list-group-item">Item 2a</li>
-                          <li class="list-group-item">Item 2b</li>
-                      </ul>
-                  </li>
-                  <li class="list-group-item">Class 10th
-                      <ul class="list-group">
-                          <li class="list-group-item">Item 3a</li>
-                          <li class="list-group-item">Item 3b</li>
-                      </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div> <!-- End Course Item-->
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-            <div class="course-item">
-              <%= image_tag 'course-3.jpg', size:'440x275' %>
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h3>Intermediate</h3>
-                </div>
-
-                <ul class="list-group">
-                  <li class="list-group-item">Class 11th
-                      <ul class="list-group">
-                          <li class="list-group-item">Item 2a</li>
-                          <li class="list-group-item">Item 2b</li>
-                      </ul>
-                  </li>
-                  <li class="list-group-item">Class 12th
-                      <ul class="list-group">
-                          <li class="list-group-item">Item 3a</li>
-                          <li class="list-group-item">Item 3b</li>
-                      </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div> <!-- End Course Item-->
-
-        </div>
-
-      </div>
-    </section><!-- End Courses Section -->
+    <%= render 'classes/courses' %>
 
     <!-- ======= Trainers Section ======= -->
     <section id="trainers" class="trainers">
